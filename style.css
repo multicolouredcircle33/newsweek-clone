@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.outer-box {
+  width: 100dvw;
+}
+
+.inner-box {
+  position: fixed;
+  width: 100dvw;
+}
+
+.main-header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.newsweek {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 27px;
+}
+
+.newsweek-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  display: none;
+}
+
+.subscribe-button {
+  font-size: small;
+  padding: 2px;
+}
+
+.date {
+  display: none;
+}
+
+.user-interface {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  place-content: center;
+}
+
+.first-nav {
+  display: none;
+}
+
+.second-nav {
+  display: none;
+}
+
+.line {
+  display: none;
+}
+
+.fa-user {
+  color: antiquewhite;
+  margin-top: 5px;
+}
+
+.fa-bars {
+  color: antiquewhite;
+  margin-top: 5px;
+}
+
+
+/*TABLET VIEW*/
+@media screen and (min-width: 768px) {
+  .login-button {
+    display: flex;
+    background-color: inherit;
+    color: white;
+    font-weight: 700;
+  }
+
+  .subscribe-button {
+    font-size: 16px;
+    width: 8em;
+  }
+
+  .user-icon {
+    display: none;
+  }
+
+  .user-interface {
+    width: 16em;
+    margin-right: 5px;
+  }
+
+  .main-header {
+    height: 60px;
+  }
+
+}
+
+/*DESKTOP VIEW*/
+@media screen and (min-width: 1024px) {
+  .main-header {
+    height: 6em;
+    display: flex;
+    align-items: center;
+  }
+
+  .newsweek {
+    font-size: 4em;
+    font-weight: bolder;
+  }
+
+  .newsweek-container {
+    height: 6em;
+  }
+
+  .date {
+    display: flex;
+    color: white;
+    font-size: 25px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .user-interface {
+    width: 13em;
+  }
+
+  .first-nav {
+    display: flex;
+    background-color: white;
+  }
+
+  .second-nav {
+    display: flex;
+    background-color: white;
+  }
+
+  .fonty {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .fonty:hover {
+    color: orangered;
+  }
+  
+  .break {
+    color: lightgrey;
+  }
+  
+  .search {
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+
+  .fonty-trending {
+    font-weight: 600;
+  }
+  
+  .fonty-b {
+    font-weight: 600;
+    color: grey;
+  }
+  
+  .fonty-b:hover {
+    color: orangered;
+  }
+  
+  .line {
+    display: flex;
+    width: 100vw;
+  }
+
+  .inner-box {
+    background-color: white;
+  }
+  
+}
+
+/*LARGE SCREENS*/
+@media screen and (min-width: 1024px) {
+
+}
