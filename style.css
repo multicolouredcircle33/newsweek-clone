@@ -60,6 +60,11 @@
   display: none;
 }
 
+.fonty {
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+
 .line {
   display: none;
 }
@@ -174,7 +179,7 @@
 
 .more-stories-img {
   width: 100px;
-  height: 100px;
+  height: auto;
   margin-right: 1em;
 }
 
@@ -254,10 +259,12 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 0.5em;
+  width: 90%;
 }
 
 .form-text {
   font-weight: 750;
+  width: 90%;
   width: 75%;
 }
 
@@ -265,9 +272,89 @@
   display: none;
 }
 
+.form-div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsored-insight-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.january-issue {
+  height: auto;
+}
+
+.ji-img-container {
+  position: relative;
+  height: auto;
+}
+
+.ji-img {
+  width: 100%;
+  height: auto;
+}
+
+.ji-text {
+  background-color: rgba(255,255,255,.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: orangered;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.ji-label {
+  width: 100%;
+  font-weight: 700;
+  background-color: lightgray;
+  text-decoration: none;
+  display: flex;
+  place-content: center;
+}
+
+.the-mag-img {
+  width: 100%;
+  height: auto;
+}
+
+.FBI {
+  margin-top: 2em;
+}
+
+.fbi-text-1 {
+  background-color: orangered;
+  font-weight: 700;
+  color: white;
+}
+
+.fbi-text-2 {
+  font-weight: 700;
+  color: orangered;
+}
+
+.the-mag-img-container {
+  margin-bottom: 1em;
+}
+
+.the-mag-sub {
+  font-weight: 700;
+}
+
+.the-mag-sub:hover {
+  text-decoration: underline;
+  text-decoration-color: orangered;
+}
+
 
 /*TABLET VIEW*/
 @media screen and (min-width: 768px) {
+
   .login-button {
     display: flex;
     background-color: inherit;
@@ -290,6 +377,10 @@
   }
 
   .main-header {
+    height: 60px;
+  }
+
+  .inner-box {
     height: 60px;
   }
 
@@ -354,6 +445,57 @@
     display: none;
   }
 
+  .form-div {
+    width: 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .the-magazine-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+  }
+
+  .the-mag-img {
+    width: 100%;
+    height: 10em;
+  }
+
+  .the-mag-img-container {
+    height: 10em;
+  }
+
+  .fbi-text-1 {
+    font-size: 12px;
+  }
+
+  .fbi-text-2 {
+    font-size: 12px;
+  }
+
+  .ji-img {
+    height: auto;
+  }
+
+  .the-magazine-content {
+    margin-top: 1em;
+  }
+
+  .FBI {
+    margin-top: 0;
+  }
+
+  .january-issue {
+    height: 20em;
+  }
+
+  .ji-label {
+    font-size: 12px;
+    font-weight: 800;
+  }
+
 }
 
 /*DESKTOP VIEW*/
@@ -405,6 +547,7 @@
     font-weight: 600;
     color: #000;
     text-decoration: none;
+    font-family: "Roboto Condensed",sans-serif;
   }
 
   .fonty:hover {
@@ -427,6 +570,7 @@
   .fonty-b {
     font-weight: 600;
     color: grey;
+    font-family: "Roboto Condensed",sans-serif;
   }
   
   .fonty-b:hover {
@@ -454,7 +598,9 @@
   }
 
   .myt-sub-container {
+    display: grid;
     gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .featured-stories-img {
@@ -477,11 +623,53 @@
 
   .myt-img {
     width: 100%;
+    height: auto;
   }
 
   .line-c {
     display: flex;
-    width: 100dvw;
+    width: 100%;
+  }
+
+  .form-div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .the-magazine-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+  }
+
+  .the-mag-img {
+    height: 18em;
+  }
+
+  .the-mag-img-container {
+    height: 18em;
+  }
+
+  .fbi-text-1 {
+    font-size: 15px;
+  }
+
+  .fbi-text-2 {
+    font-size: 16px;
+  }
+
+  .january-issue {
+    height: 26em;
+  }
+
+  .ji-img-container {
+    height: 23.6em;
+  }
+
+  .ji-img {
+    height: 23.6em;
   }
   
 }
