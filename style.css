@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
 
 .inner-box {
   position: fixed;
-  width: 100dvw;
+  width: 100vw;
   height: 50px;
   z-index: 10;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .fonty {
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .line {
@@ -118,7 +118,7 @@ body {
 .sponsored-insight-img {
   display: block;
   width: 100%;
-  height: 14em; 
+  height: 14em;
 }
 
 .top-story-img {
@@ -131,7 +131,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
   color: orangered;
   font-size: 16px;
   font-weight: 700;
@@ -185,7 +185,7 @@ body {
 
 .line-b {
   display: flex;
-  width: 100dvw;
+  width: 100vw;
 }
 
 .more-stories-img {
@@ -318,7 +318,7 @@ body {
 }
 
 .ji-text {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,0.9);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -507,7 +507,7 @@ body {
   width: 50%;
 }
 
-.circle-c{
+.circle-c {
   width: 1em;
   height: 1em;
   color: gray;
@@ -546,9 +546,8 @@ body {
   margin-right: 0.5em;
 }
 
-/*TABLET VIEW*/
+/* TABLET VIEW */
 @media screen and (min-width: 768px) {
-
   .login-button {
     display: flex;
     background-color: inherit;
@@ -635,10 +634,6 @@ body {
     width: 18em;
   }
 
-  .form-div {
-    width: 16em;
-  }
-
   .line-c {
     display: none;
   }
@@ -654,6 +649,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5em;
+    margin-top: 1em;
   }
 
   .the-mag-img {
@@ -675,10 +671,6 @@ body {
 
   .ji-img {
     height: auto;
-  }
-
-  .the-magazine-content {
-    margin-top: 1em;
   }
 
   .editors-pick-content {
@@ -770,7 +762,8 @@ body {
     text-align: left;
   }
 
-  .grey-text, .grey-text-2 {
+  .grey-text, 
+  .grey-text-2 {
     text-align: left;
   }
 
@@ -840,7 +833,7 @@ body {
   }
 }
 
-/*DESKTOP VIEW*/
+/* DESKTOP VIEW */
 @media screen and (min-width: 1024px) {
   .inner-box {
     height: 12em;
@@ -896,17 +889,17 @@ body {
     font-weight: 600;
     color: #000;
     text-decoration: none;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
   }
 
   .fonty:hover {
     color: orangered;
   }
-  
+
   .break {
     color: lightgrey;
   }
-  
+
   .search {
     font-size: 1.2em;
     font-weight: 200;
@@ -915,17 +908,17 @@ body {
   .fonty-trending {
     font-weight: 600;
   }
-  
+
   .fonty-b {
     font-weight: 600;
     color: grey;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
   }
-  
+
   .fonty-b:hover {
     color: orangered;
   }
-  
+
   .line {
     display: flex;
     width: 100vw;
@@ -959,6 +952,7 @@ body {
 
   .featured-stories-text {
     width: 100%;
+    margin-top: 0.5em;
   }
 
   .featured-stories-text-b {
@@ -1029,10 +1023,6 @@ body {
     margin-top: -0.5em;
   }
 
-  .featured-stories-text {
-    margin-top: 0.5em;
-  }
-
   .editors-pick-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1075,14 +1065,23 @@ body {
     cursor: pointer;
   }
 
-  .myt-img:hover,.ep-next-img:hover,.sub-b-img:hover,.more-stories-img:hover,.the-mag-img:hover,.fh-img:hover,.ji-img {
+  .ep-next-img {
+    height: 16em;
+  }
+
+  .myt-img:hover,
+  .ep-next-img:hover,
+  .sub-b-img:hover,
+  .more-stories-img:hover,
+  .the-mag-img:hover,.fh-img:hover,
+  .ji-img {
     cursor: pointer;
   }
 
   .sub-letter {
     display: flex;
     gap: 1em;
-    margin-bottom: -8em;
+    margin-bottom: 0 3em -8em 3em;
   }
 
   .the-mag-sub:hover {
@@ -1152,7 +1151,6 @@ body {
   .form-container {
     display: flex;
     flex-direction: column;
-    height: 9em;
     width: 100%;
     padding: 0.2em;
     height: fit-content;
@@ -1212,15 +1210,7 @@ body {
   }
 
   .grey-text-2 {
-    text-align: left;   
-  }
-
-  .ep-next-img {
-    height: 16em;
-  }
-
-  .sub-letter {
-    margin: auto 3em;
+    text-align: left;
   }
 
   .fbi-text-1:hover {
@@ -1268,7 +1258,7 @@ body {
   }
 }
 
-/*LARGE SCREENS*/
+/* LARGE SCREENS */
 @media screen and (min-width: 2560px) {
   .sb-content-img {
     width: 20%;
