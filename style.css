@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
 }
 
 .inner-box {
@@ -39,6 +42,7 @@
 .subscribe-button {
   font-size: small;
   padding: 2px;
+  background-color: #ffff00db;
 }
 
 .date {
@@ -63,7 +67,6 @@
 .fonty {
   font-family: "Roboto Condensed",sans-serif;
 }
-
 
 .line {
   display: none;
@@ -134,6 +137,10 @@
   font-weight: 700;
 }
 
+.featured-stories-text-b {
+  border: 0.1px solid lightgray;
+}
+
 .top-story-text {
   margin-top: 10px;
 }
@@ -141,11 +148,14 @@
 .text-1 {
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.3em;
 }
 
 .text-1:hover {
   text-decoration: underline;
   text-decoration-color: orangered;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
 }
 
 .text-2 {
@@ -170,6 +180,7 @@
 
 .myt-text {
   color: grey;
+  font-weight: 700;
 }
 
 .line-b {
@@ -196,6 +207,12 @@
   width: 75%;
 }
 
+.more-stories-bold-text:hover {
+  text-decoration: underline;
+  text-decoration-color: orangered;
+  text-decoration-thickness: 2px;
+}
+
 .froma-harrop {
   display: flex;
   align-items: center;
@@ -205,6 +222,7 @@
 .fh-img {
   width: 5em;
   height: 5em;
+  border-radius: 50%;
 }
 
 .fh-texts {
@@ -349,8 +367,184 @@
 .the-mag-sub:hover {
   text-decoration: underline;
   text-decoration-color: orangered;
+  cursor: pointer;
 }
 
+.ep-next-header {
+  color: orangered;
+  font-weight: 700;
+}
+
+.ep-next-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-top: 0.6em;
+}
+
+.sub-b-text {
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.ep-next-img {
+  width: 100%;
+}
+
+.sub-b-img {
+  width: 10em;
+  height: 8em;
+}
+
+.featured-stories-text {
+  margin-top: 0.6em;
+}
+
+.sub-letter {
+  margin: auto 1em;
+}
+
+.subscribe {
+  height: 35em;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 25em;
+}
+
+.sb-content-img {
+  position: relative;
+  overflow-y: hidden;
+  width: 18em;
+  height: 27em;
+  margin-left: 5em;
+  margin-top: 1em;
+}
+
+.sb-img-1 {
+  width: 9em;
+  height: 11em;
+}
+
+.sb-img-2 {
+  width: 9em;
+  height: 11em;
+  position: absolute;
+  left: 5em;
+  top: 1em;
+}
+
+.sb-content-text {
+  text-align: center;
+  position: absolute;
+  top: 9em;
+}
+
+.sb-bold-text {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: -1.5px;
+  color: black;
+}
+
+.grey-text {
+  color: black;
+}
+
+.sb-content-button {
+  background-color: #ff0000e3;
+  color: white;
+}
+
+.grey-text-2 {
+  color: black;
+}
+
+.nw-img {
+  width: 100%;
+  height: 13em;
+}
+
+.nw-bold-text {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.nw-text {
+  margin-bottom: 1em;
+}
+
+.nw-content {
+  text-align: center;
+}
+
+.nw-content-button {
+  background-color: #ff0000e3;
+  width: 50%;
+  text-wrap: nowrap;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+}
+
+.nw-img-content {
+  border: 0.1px solid lightgray;
+  padding: 1em;
+}
+
+.form-input {
+  border: 0.1px solid lightgray;
+  width: 50%;
+}
+
+.circle-c{
+  width: 1em;
+  height: 1em;
+  color: gray;
+}
+
+.footer-newsweek {
+  color: orangered;
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  padding-bottom: 0;
+}
+
+.footer-newsweek-sub {
+  color: gray;
+}
+
+.footer-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.footer-links {
+  color: gray;
+}
+
+.footer-bar {
+  display: none;
+}
+
+.footer-content-sub {
+  word-spacing: 4px;
+}
+
+.footer-link {
+  margin-right: 0.5em;
+}
 
 /*TABLET VIEW*/
 @media screen and (min-width: 768px) {
@@ -437,6 +631,10 @@
     width: 18em;
   }
 
+  .featured-stories-text-b {
+    width: 18em;
+  }
+
   .form-div {
     width: 16em;
   }
@@ -455,7 +653,7 @@
   .the-magazine-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+    gap: 1.5em;
   }
 
   .the-mag-img {
@@ -483,6 +681,12 @@
     margin-top: 1em;
   }
 
+  .editors-pick-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+  }
+
   .FBI {
     margin-top: 0;
   }
@@ -496,6 +700,144 @@
     font-weight: 800;
   }
 
+  .ep-next-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+  }
+
+  .sub-b-img {
+    width: 10em;
+    height: 7em;
+  }
+
+  .sub-letter {
+    margin-bottom: -8em;
+  }
+
+  .subscribe-down {
+    margin-bottom: 2em;
+  }
+
+  .subscribe-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    height: 23em;
+  }
+
+  .middler {
+    width: 100%;
+    position: relative;
+    text-align: end;
+  }
+
+  .sb-content-img {
+    width: 40%;
+    margin-left: 0;
+    display: flex;
+  }
+
+  .sb-img-1 {
+    position: absolute;
+    height: 15em;
+    width: 11em;
+    left: 1em;
+    top: 5em;
+  }
+
+  .sb-img-2 {
+    position: absolute;
+    height: 15em;
+    width: 11em;
+    top: 7em;
+    left: 7em;
+  }
+
+  .sb-content-text {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: initial;
+  }
+
+  .sb-bold-text {
+    align-self: flex-start;
+    font-size: 1.8em;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+
+  .grey-text, .grey-text-2 {
+    text-align: left;
+  }
+
+  .nw-content {
+    display: flex;
+    height: 30em;
+  }
+
+  .nw-img-card {
+    width: 50%;
+  }
+
+  .nw-img {
+    height: 20em;
+  }
+
+  .nw-img-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20em;
+  }
+
+  .form-container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .more-stories-bold-text:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-newsweek-container {
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+  }
+
+  .footer-newsweek-sub {
+    align-self: end;
+  }
+
+  .footer-icons-container {
+    display: flex;
+    align-self: end;
+    justify-content: space-between;
+    gap: 0.5em;
+  }
+
+  .footer-newsweek {
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .footer-bar {
+    display: inline;
+    color: grey;
+  }
 }
 
 /*DESKTOP VIEW*/
@@ -503,6 +845,7 @@
   .inner-box {
     height: 12em;
   }
+
   .main-header {
     height: 6em;
     display: flex;
@@ -530,6 +873,12 @@
 
   .user-interface {
     width: 13em;
+  }
+
+  .subscribe-button:hover {
+    transition: all 0.5s ease-out;
+    background-color: black;
+    color: yellow;
   }
 
   .first-nav {
@@ -612,18 +961,22 @@
     width: 100%;
   }
 
+  .featured-stories-text-b {
+    width: 100%;
+  }
+
   .sponsored-insight-img {
     width: 100%;
   }
 
   .top-story-img {
     width: 100%;
-    height: 18em;
+    height: 19em;
   }
 
   .myt-img {
     width: 100%;
-    height: auto;
+    height: 7em;
   }
 
   .line-c {
@@ -641,15 +994,15 @@
   .the-magazine-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+    gap: 1.5em;
   }
 
   .the-mag-img {
-    height: 18em;
+    height: 20em;
   }
 
   .the-mag-img-container {
-    height: 18em;
+    height: 20em;
   }
 
   .fbi-text-1 {
@@ -661,19 +1014,267 @@
   }
 
   .january-issue {
-    height: 26em;
+    height: 28em;
   }
 
   .ji-img-container {
-    height: 23.6em;
+    height: 25.6em;
   }
 
   .ji-img {
-    height: 23.6em;
+    height: 25.6em;
   }
-  
+
+  .text-2 {
+    margin-top: -0.5em;
+  }
+
+  .featured-stories-text {
+    margin-top: 0.5em;
+  }
+
+  .editors-pick-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5em;
+  }
+
+  .ep-next-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+  }
+
+  .ep-next-text:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+  }
+
+  .sub-b-text:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+  }
+
+  .ep-next-header {
+    display: flex;
+    align-items: last baseline;
+  }
+
+  .nw-header {
+    display: flex;
+    align-items: last baseline;
+    font-size: 22px;
+  }
+
+  .more-stories-bold-text:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+  }
+
+  .myt-img:hover,.ep-next-img:hover,.sub-b-img:hover,.more-stories-img:hover,.the-mag-img:hover,.fh-img:hover,.ji-img {
+    cursor: pointer;
+  }
+
+  .sub-letter {
+    display: flex;
+    gap: 1em;
+    margin-bottom: -8em;
+  }
+
+  .the-mag-sub:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .subscribe-down {
+    width: 60%;
+  }
+
+  .subscribe-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sb-content-text {
+    width: 55%;
+    text-align: left;
+  }
+
+  .sb-content-img {
+    width: 45%;
+    display: flex;
+    position: relative;
+  }
+
+  .middler {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sb-img-1 {
+    height: 13em;
+    width: 9.5em;
+    position: absolute;
+  }
+
+  .sb-img-2 {
+    position: absolute;
+    height: 13em;
+    width: 9.5em;
+    left: 6em;
+  }
+
+  .newsletter {
+    width: 40%;
+  }
+
+  .nw-content {
+    display: flex;
+    height: 40em;
+  }
+
+  .nw-img-card {
+    width: 50%;
+    background-color: aqua;
+    height: fit-content;
+  }
+
+  .nw-img-content {
+    width: 50%;
+    height: 23em;
+    display: grid;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    height: 9em;
+    width: 100%;
+    padding: 0.2em;
+    height: fit-content;
+  }
+
+  .nw-img {
+    height: 23em;
+  }
+
+  .nw-bold-text {
+    text-align: left;
+    font-size: 22px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    overflow-y: hidden;
+    height: max-content;
+  }
+
+  .nw-text {
+    font-size: 17px;
+    text-align: left;
+    overflow-y: hidden;
+    height: fit-content;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 0.4em;
+    height: 2.5em;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  .nw-content-button {
+    width: 100%;
+    padding: 0.4em;
+    height: 2.5em;
+    text-wrap: nowrap;
+    color: white;
+  }
+
+  .nw-content-button:hover {
+    color: #ff0000e3;
+    background-color: white;
+    transition: all 0.5s ease-out;
+    text-decoration: underline;
+  }
+
+  .sb-content-button:hover {
+    color: #ff0000e3;
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+    text-decoration: underline;
+  }
+
+  .grey-text {
+    text-align: left;
+  }
+
+  .grey-text-2 {
+    text-align: left;   
+  }
+
+  .ep-next-img {
+    height: 16em;
+  }
+
+  .sub-letter {
+    margin: auto 3em;
+  }
+
+  .fbi-text-1:hover {
+    transition: all 0.5s ease-out;
+    background-color: transparent;
+    color: #ff0000e3;
+    cursor: pointer;
+  }
+
+  .fh-texts:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: orangered;
+  }
+
+  .footer {
+    margin-top: -16em;
+  }
+
+  .footer-newsweek:hover {
+    cursor: pointer;
+  }
+
+  .footer-icon:hover {
+    height: 2.3em;
+    width: 2.3em;
+    cursor: pointer;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+    text-decoration-color: grey;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sb-content-img {
+    width: 35%;
+    margin-left: 5em;
+  }
+
+  .sb-content-text {
+    width: 65%;
+  }
 }
 
 /*LARGE SCREENS*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 2560px) {
+  .sb-content-img {
+    width: 20%;
+  }
+
+  .sb-content-text {
+    width: 80%;
+  }
 }
