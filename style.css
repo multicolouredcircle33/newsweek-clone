@@ -318,7 +318,7 @@ body {
 }
 
 .ji-text {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255 ,25 5, 0.9);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -762,7 +762,8 @@ body {
     text-align: left;
   }
 
-  .grey-text, 
+  .grey-text,
+  
   .grey-text-2 {
     text-align: left;
   }
@@ -835,10 +836,6 @@ body {
 
 /* DESKTOP VIEW */
 @media screen and (min-width: 1024px) {
-  .inner-box {
-    height: 12em;
-  }
-
   .main-header {
     height: 6em;
     display: flex;
@@ -926,6 +923,7 @@ body {
 
   .inner-box {
     background-color: white;
+    height: 12em;
   }
 
   .stories-section {
