@@ -318,7 +318,7 @@ body {
 }
 
 .ji-text {
-  background-color: rgba(255, 255 ,25 5, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -763,7 +763,6 @@ body {
   }
 
   .grey-text,
-  
   .grey-text-2 {
     text-align: left;
   }
@@ -1071,7 +1070,8 @@ body {
   .ep-next-img:hover,
   .sub-b-img:hover,
   .more-stories-img:hover,
-  .the-mag-img:hover,.fh-img:hover,
+  .the-mag-img:hover,
+  .fh-img:hover,
   .ji-img {
     cursor: pointer;
   }
